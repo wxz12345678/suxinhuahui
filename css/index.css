@@ -1,0 +1,401 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+/*导航栏开始*/
+.header{
+	width: 100%;
+	height: 79px;
+	background-color: rgba(0,0,0,0.15);
+	position: fixed; /*相对于浏览器固定定位*/
+	left: 0;
+	top: 0;
+}
+.headerContent{
+	width: 1170px;
+	height: 100%;
+	margin: 0 auto;
+}
+.headerContent .logo{
+	float: left;
+	margin-top: 10px;
+}
+.headerContent .nav{
+	float: right;
+	width: 510px;
+	height: 100%;
+}
+.nav li{
+	float: left;
+	width: 85px;
+	height: 100%;
+	text-align: center;
+	line-height: 79px;
+}
+.nav > li> a{
+	font-size: 14px;
+	color: #ffffff;
+}
+.nav > li> a.hot{
+	color: #16b0dc;
+}
+.nav > li> a:hover{
+	color: #16b0dc;
+}
+
+.banner{
+	width: 100%;
+	height: 780px;
+	position: relative;
+}
+.bannerImg{
+	width: 100%;
+	height: 100%;
+}
+.bannerImg > li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mor{
+	display:block;
+	position: absolute;
+	bottom: 54px;
+	right:620px;
+	font-size:36px;
+	color:#f4edcf;
+	line-height:38px;
+	font-weight: normal;
+	letter-spacing: 0.54px;
+	text-align: center;
+	animation: bounceOutDown  .8s;
+}
+.bannerImg > li > a, .bannerImg > li > a >img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.banner .btnLeft{
+	position:absolute;
+	left:0;
+	top:0;
+	width:15%;
+	height:100%;
+	z-index: 999;
+	opacity: 0;
+	/*background-image: linear-gradient(180deg,rgba(0,0,0,0.2) 80%,rgba(0,0,0,0.1));*/
+	
+}
+.banner .btnRight{
+	width:15%;
+	height:100%;
+	position:absolute;
+	right:0;
+	top:0;
+	z-index: 999;
+	opacity: 0;
+	/*background-image: linear-gradient(180deg,rgba(0,0,0,0.2) 80%,rgba(0,0,0,0.1));*/
+}
+.banner:hover .btnLeft{
+	opacity: 1;
+}
+.banner:hover .btnRight{
+	opacity: 1;
+}
+.banner .btns{
+	position: absolute;
+	bottom:30px;
+	/*left:50%;*/
+	/*margin-left: -30px;*/
+	/*transform: translateX(-50%); *//*在x轴上平移自己的50%*/
+	left:0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 999;
+	width: 60px;
+	height: 10px;
+}
+.btns > li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius:50% ;
+	margin-right: 10px;
+	background-color: #cfcad4;
+}
+.btns >li:last-child{
+	margin-right: 0;
+}
+.btns li.hot{
+	background-color: #fff;
+}
+.btnLeft i{
+	/*text-align: center;
+	line-height: 15%;*/
+	position: absolute;
+	top:390px;
+	left:50px;
+	color: #FFFFFF;
+	font-size: 35px;
+}
+.btnRight i{
+	/*text-align: center;
+	line-height: 15%;*/
+	position: absolute;
+	top:390px;
+	right:50px;
+	color: #FFFFFF;
+	font-size: 35px;
+}
+
+/*header结束*/
+.txt{
+	width:1200px; 
+	height:82px;
+	margin: 70px auto 5px auto;
+	text-align: center;
+
+}
+.txt h3{
+	font-size:36px; 
+	color:#37474f;
+	animation: bounceInDown .8s;
+}
+.txt p{
+	display: block;
+	width: 1200px;
+	height: 18px;
+    font-size:16px; 
+    color:#778492;
+    margin-top:20px;
+	animation: bounceInDown .8s;
+}
+/*导航栏结束*/
+/*素馨花艺展示开始*/
+.cent-pic{
+	width: 1024px;
+	height: 504px;
+	margin: 0 auto;
+	/*padding: auto;*/
+	position:relative;
+	padding-left:30px;
+	padding-right:30px;
+	overflow: hidden;
+}
+.cent-pic .bannerul{
+	width:100% ;
+	height: 425px;
+	transition: all 0.5s;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.pic-all{
+	width: 320px;
+	/*height: 504px;*/
+	/*background-color: blue;*/
+	float: left;
+	padding-right:32px; 
+}
+.pic{
+	width: 300px;
+	height: 300px;
+	margin-left: 10px;
+	border-radius: 50%;
+    background-image: url(../img/11.jpg);
+	background-position: 5px ;
+}
+.pic-all h2{
+	display: block;
+	width: 320px;
+	height: 20px;
+	margin-top: 5px; 
+	color: #37474f;
+	font-size:18px;
+	text-align: center;
+}
+.pic-all p{
+	display: block;
+	width: 306px;
+	height: 34px;
+	margin-top: 5px; 
+	color: #757575;
+	font-size:14px;
+	margin-top: 18px;  
+}
+.pic-all a{
+	display: inline-block;
+	width:320px; 
+	height:34px;
+	background-color: #f96868;
+	text-align:center;
+	line-height:36px;
+	margin-top: 14px;
+	font-size: 14px;
+	color: #fefafa;   
+}
+/*素馨花艺展示结束*/
+/*素馨花语开始*/
+.dispy{
+	height: 702px;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.dispy-txt{
+	height: 166px;
+	width: 100%;
+	text-align: center;
+	line-height: 166px;
+	font-size: 36px;
+	color: #37474f;
+}
+.dispy-all{
+	width: 1200px;
+	height: 472px;
+	margin:0 auto;
+}
+.dispy-part{
+	width: 50%;
+	height: 100px;
+	float: left;
+	margin-bottom:28px; 
+}
+.dispy-part a{
+	display:block;
+	width:162px; 
+	height:94px;
+	background-image: url(../img/6.jpg);
+	float: left;
+}
+.dispy-part div{
+	display: inline-block;
+	width: 370px;
+	height: 100%;
+	margin-left: 20px; 
+}
+.dispy-part div h2{
+	color: #2a333c;
+	font-size: 18px;
+}
+.dispy-part div p{
+	display: inline-block;
+	margin: 10px 0;
+	color: #84909a;
+	font-size:14px;
+}
+.dispy-part div h5{
+	color: #a6aeb6;
+	font-size:12px;
+}
+/*素馨花语结束*/
+/*底部开始*/
+.footer{
+	width: 100%;
+	height: 932px;
+	background-color:#ffffff;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #f0f2f5;
+	/*display: none;*/
+	animation: bounce .8s;
+}
+.footer-title{
+	width: 1200px;
+	height: 182px;
+	margin: 0 auto;
+	color: #515f65;
+	font-size:36px;
+	text-align: center;
+	line-height: 182px;
+	animation: bounce .8s;
+}
+.footer h2{
+	display: block;
+	height: 18px;
+	line-height: 18px;
+	font-size: 16px;
+	color: #505050;
+	margin-bottom: 30px;
+	font-weight: normal;
+	animation: bounce .8s;
+}
+.footer p{
+	line-height: 16PX;
+	color: #505050;
+	animation: bounce .8s;
+}
+.footer img{
+	width: 530px;
+	height: 340px;
+	text-align: center;
+	margin-top:38px;
+	animation: bounce .8s;
+}
+/*底部结束*/
+/*宣传分享开始*/
+.footer1{
+	height: 200px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: #ffffff;
+}
+.footer-center{
+	height: 160px;
+	width: 100%;
+	margin: auto 0;
+	background-color: #f5f5f5;
+}
+.footer-center div{
+	width: 370px;
+	height: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.footer-center div ul{
+	display: block;
+	width: 180px;
+	height: 48px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer-center div ul li{
+	float: left;
+	line-height: 48px;
+	font-size: 24px;
+	padding-right: 40px;
+}
+.footer-center div ul li:last-of-type{
+	padding-right: 0;
+	color: #62a8ea;
+	font-size: 26px;
+}
+.footer-center div ul li:first-of-type{
+	color:#83b944; 
+	font-size:26px;
+}
+.footer-center div ul li:nth-of-type(2){
+	color: #62a8ea; 
+	font-size:26px;
+}
+.footer-center div p:first-of-type{
+    font-size:14px; 
+    color:#62a8eb;
+    margin-top: 10px;
+}
+.footer-center div p:nth-of-type(2){
+	font-size: 12px;
+	color: #c1b1aa;
+	margin-top: 10px;
+}
+.footer-center div p:last-of-type{
+	font-size: 12px;
+	color: #c1b1aa;
+	margin-top: 10px;
+}
